@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "da602a58-f8fc-4778-86ba-12405c19d757",
+		"name": "prova",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44893011",
+		"_collection_link": "https://eduardo-3365429.postman.co/workspace/Eduardo's-Workspace~ff2573a4-87b1-4c33-8e2a-000878e03c41/collection/44893011-da602a58-f8fc-4778-86ba-12405c19d757?action=share&source=collection_link&creator=44893011"
+	},
+	"item": [
+		{
+			"name": "pagina inicial mostra os produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.demoblaze.com/entries",
+					"protocol": "https",
+					"host": [
+						"api",
+						"demoblaze",
+						"com"
+					],
+					"path": [
+						"entries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mostra produto de determinada categoria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cat\": \"phones\",\r\n  \"page\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.demoblaze.com/bycat",
+					"protocol": "https",
+					"host": [
+						"api",
+						"demoblaze",
+						"com"
+					],
+					"path": [
+						"bycat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adicionar ao carrinho sem estar logado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"abc123-qualquercoisa\",\r\n  \"cookie\": \"usuario_teste\",\r\n  \"prod_id\": 1,\r\n  \"flag\": false\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.demoblaze.com/addtocart",
+					"protocol": "https",
+					"host": [
+						"api",
+						"demoblaze",
+						"com"
+					],
+					"path": [
+						"addtocart"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
