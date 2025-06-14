@@ -1,5 +1,5 @@
 # Prova-QA
-Avaliação que aborda cypress(Teste UI) e postman(Teste API)
+Avaliação que aborda cypress (Teste UI) e postman (Teste API)
 <br>
 <br>
 # Testes feitos no site: https://www.demoblaze.com/
