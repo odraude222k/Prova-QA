@@ -5,8 +5,8 @@ Avaliação que aborda cypress (Teste UI) e postman (Teste API)
 # Testes feitos no site: https://www.demoblaze.com/
 <br>
 <br>
-# Teste de UI com cypress
 
+# Teste de UI com cypress:
 Função utilizada para entrar no link do site:
 ```javascript
 function entrar_site(){
